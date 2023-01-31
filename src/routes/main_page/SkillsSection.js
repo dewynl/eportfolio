@@ -23,7 +23,7 @@ function SkillsSection() {
       <Container sx={{ mt: 15, mb: 30, display: "flex", position: "relative" }}>
         <Box
           component="img"
-          src="/productCurvyLines.png"
+          src={process.env.PUBLIC_URL + "/productCurvyLines.png"}
           alt="curvy lines"
           sx={{ pointerEvents: "none", position: "absolute", top: -180 }}
         />

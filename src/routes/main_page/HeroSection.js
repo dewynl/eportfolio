@@ -3,7 +3,7 @@ import Button from "../../components/Button";
 import Typography from "../../components/Typography";
 import ProductHeroLayout from "./ProductHeroLayout";
 
-const backgroundImage = "/background.jpg";
+const backgroundImage = process.env.PUBLIC_URL + "/background.jpg";
 
 export default function HeroSection() {
   return (
