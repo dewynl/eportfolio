@@ -109,7 +109,6 @@ function AboutSection() {
           variant="contained"
           size="large"
           component="a"
-          href="#portfolio"
           sx={{ minWidth: 200 }}
           onClick={handleOpen}
         >
