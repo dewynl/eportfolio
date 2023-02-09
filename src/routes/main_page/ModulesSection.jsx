@@ -57,7 +57,7 @@ export default function ModulesSection() {
   const navigate = useNavigate();
 
   const handleModuleClick = path => {
-    navigate(`/modules/${path}`);
+    navigate(`/eportfolio/modules/${path}`);
   };
 
   return (
