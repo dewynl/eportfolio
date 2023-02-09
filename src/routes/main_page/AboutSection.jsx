@@ -108,7 +108,6 @@ function AboutSection() {
           color="secondary"
           variant="contained"
           size="large"
-          component="a"
           sx={{ minWidth: 200 }}
           onClick={handleOpen}
         >
