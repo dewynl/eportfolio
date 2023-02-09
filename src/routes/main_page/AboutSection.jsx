@@ -144,7 +144,7 @@ function AboutSection() {
                 {experience.company}
               </Typography>
               <Typography variant="p" component="h5">
-                {jobExperiences.employmentTime}
+                {experience.employmentTime}
               </Typography>
 
               <Typography
