@@ -1,7 +1,6 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
 import Typography from "../../components/Typography";
-import Link from "@mui/material/Link";
 import Button from "../../components/Button";
 
 function AboutSection() {

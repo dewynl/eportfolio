@@ -1,13 +1,11 @@
 import * as React from "react";
-import Button from "../../components/Button";
-import Typography from "../../components/Typography";
-import ProductHeroLayout from "./ProductHeroLayout";
+import PropTypes from "prop-types";
+import Typography from "./Typography";
+import HeroLayout from "./HeroLayout";
 
-const backgroundImage = process.env.PUBLIC_URL + "/background.jpg";
-
-export default function HeroSection() {
+export default function HeroSection({ title, description, backgroundImage }) {
   return (
-    <ProductHeroLayout
+    <HeroLayout
       sxBackground={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundPosition: "center"
@@ -19,7 +17,7 @@ export default function HeroSection() {
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Msc Artificial Intelligence
+        {title}
       </Typography>
       <Typography
         color="inherit"
@@ -27,9 +25,14 @@ export default function HeroSection() {
         variant="h5"
         sx={{ mb: 4, mt: { xs: 4, sm: 4 } }}
       >
-        This is my e-portfolio based on the work carried out on the Msc
-        Artificial Intelligence.
+        {description}
       </Typography>
-    </ProductHeroLayout>
+    </HeroLayout>
   );
 }
+
+HeroSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  backgroundImage: PropTypes.string.isRequired
+};
